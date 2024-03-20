@@ -82,7 +82,7 @@ function handleSubmit() {
           <label htmlFor="heading" className='text-center'>Choose Category:-</label>
           <input type='text' onChange={handleChange} placeholder='Enter Your Details' ref={categoryInput} className='shadow-lg w-75 m-auto py-2' />
           {categoryShow ? <div className="categoryOption bg-white  text-danger m-auto d-flex flex-column w-75 p-2" >
-            <div className="btn btn-dark btn-sm w-25 " onClick={() => { setCategoryShow(false) }}>%</div>
+            <div className="btn btn-dark btn-sm w-25 " onClick={() => { setCategoryShow(false) }}>❎</div>
             {category.map((option, index) => {
               return <button key={index} className='m-1 btn btn-danger w-70' value={option} onClick={handelSendInCategory} >{option}</button>
             })
