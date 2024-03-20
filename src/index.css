@@ -1,0 +1,9 @@
+.todo-container{
+  background-color: rgb(238, 238, 238);
+}
+
+.categoryOption{
+  height: 200px;
+  overflow-y: scroll;
+  
+}
